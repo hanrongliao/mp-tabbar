@@ -1,0 +1,20 @@
+<view class="tab-box">
+  <view class="tab-wrapper">
+    <scroll-view
+      class="navigation-tab"
+      scrollLeft="{{ scrollLeft }}"
+      scrollWithAnimation="{{ true }}"
+      scrollX="{{ true }}">
+      <view catchtap="onClick"
+        class="navigation-item {{ curTabIndex===index ? 'selected': '' }}"
+        data-index="{{ index }}"
+        style="margin-left: {{ index=== 0 ? '30rpx': '0' }}; margin-right: {{ index==tabs.length-1 ? '30rpx': '64rpx' }}"
+        wx:for="{{ tabs }}"
+        wx:key="name">
+        <text>{{ item }}</text>
+        <view class="navigation-item-pos-center"></view>
+        <view class="navigation-item-underline"></view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

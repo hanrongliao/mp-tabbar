@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <tab-bar tabs="{{ tabs }}" curTabIndex="{{ curTabIndex }}"></tab-bar>
+</view>
